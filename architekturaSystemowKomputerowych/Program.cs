@@ -1,26 +1,26 @@
-﻿using MicroProcessor;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 
-namespace MicroProcessor
+namespace architekturaSystemowKomputerowych
 {
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            string[] dataToCollect = { "AL", "AH", "BL", "BH", "CL", "CH", "DL", "DM" };
-            var records = new List<string> { };
-
-            foreach (var data in dataToCollect)
+            string[] dataToCollect = new string[] { "AL", "AH", "BL", "BH", "CL", "CH", "DL", "DH" };
+            var records = new List<string>() { };
+            
+            foreach(var data in dataToCollect)
             {
                 Console.WriteLine($"Provide record data for {data}");
-                string providedData = Console.ReadLine();
-
-                while (!CheckCorrection(providedData))
+                string userData = Console.ReadLine();
+                while (!CheckCorrection(userData))
                 {
                     Console.WriteLine($"You provided wrong data for {data}");
-                    providedData = Console.ReadLine();
+                    userData = Console.ReadLine();
                 }
-                records.Add(providedData.ToUpper());
+                records.Add(userData);
             }
 
             var microController = new MicroController(records);

@@ -1,0 +1,153 @@
+﻿<Window x:Class="MicroController.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MicroController.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Button Content="Wczytaj" Width="150" Height="40" FontSize="20" />
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock Text="AH" FontSize="25" />
+                            <TextBox Width="70" Height="40" />
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <TextBlock Text="BH" FontSize="25" />
+                            <TextBox Width="70" Height="40" />
+                        </Grid>
+                        <Grid Grid.Row="2">
+                            <TextBlock Text="CH" FontSize="25" />
+                            <TextBox Width="70" Height="40" />
+                        </Grid>
+                        <Grid Grid.Row="3">
+                            <TextBlock Text="DH" FontSize="25" />
+                            <TextBox Width="70" Height="40" />
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock Text="AL" FontSize="25" />
+                            <TextBox Width="70" Height="40" />
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <TextBlock Text="BL" FontSize="25" />
+                            <TextBox Width="70" Height="40" />
+                        </Grid>
+                        <Grid Grid.Row="2">
+                            <TextBlock Text="CL" FontSize="25" />
+                            <TextBox Width="70" Height="40" />
+                        </Grid>
+                        <Grid Grid.Row="3">
+                            <TextBlock Text="DL" FontSize="25" />
+                            <TextBox Width="70" Height="40" />
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Button Content="Random" Width="150" Height="40" FontSize="20" />
+                    <Button Content="Reset" Width="80" Height="40" FontSize="20" />
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition  />
+                    <RowDefinition  />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <RadioButton />
+                    <TextBlock Text="MOV" FontSize="25" />
+                </Grid>
+                <Grid Grid.Row="1">
+                    <RadioButton />
+                    <TextBlock Text="XCHG" FontSize="25" />
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" >
+                    <TextBlock Text="AL" FontSize="25" />
+                </Grid>
+                <Grid Grid.Row="1" >
+                    <TextBlock Text="AH" FontSize="25" />
+                </Grid>
+                <Grid Grid.Row="2" >
+                    <TextBlock Text="BL" FontSize="25" />
+                </Grid>
+                <Grid Grid.Row="3" >
+                    <TextBlock Text="BH" FontSize="25" />
+                </Grid>
+                <Grid Grid.Row="4" >
+                    <TextBlock Text="CL" FontSize="25" />
+                </Grid>
+                <Grid Grid.Row="5" >
+                    <TextBlock Text="CH" FontSize="25" />
+                </Grid>
+                <Grid Grid.Row="6" >
+                    <TextBlock Text="DL" FontSize="25" />
+                </Grid>
+                <Grid Grid.Row="7" >
+                    <TextBlock Text="DH" FontSize="25" />
+                </Grid>
+            </Grid>
+            <Button Grid.Row="1" Height="50" Width="150" Content="Symuluj" FontSize="25" />
+        </Grid>
+    </Grid>
+</Window>
